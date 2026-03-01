@@ -1,0 +1,28 @@
+{
+    "name": "aurexengine/core",
+    "description": "A lightweight PHP engine for building custom frameworks and applications.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AurexEngine\\": "src/"
+        },
+        "files": [
+            "src/Support/Helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "phpstan/phpstan": "^1.0"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
