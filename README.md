@@ -1,69 +1,38 @@
-# AurexEngine
+# AurexEngine Core
 
-<p align="center">
-  <strong>AurexEngine</strong><br>
-  A modular PHP runtime engine for building modern frameworks.
-</p>
+> The foundation of the AurexEngine ecosystem.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/PHP-8.0%2B-blue" alt="PHP Version">
-  <img src="https://img.shields.io/badge/License-MIT-green" alt="License">
-  <img src="https://img.shields.io/badge/Architecture-Engine--First-black" alt="Architecture">
-</p>
+AurexEngine Core provides the essential building blocks required to
+power the entire AurexEngine modular framework system.
 
----
+## Features
 
-## 🧠 What is AurexEngine?
+-   Service Container (IoC)
+-   Application lifecycle management
+-   Service Providers
+-   Configuration loader
+-   Environment (.env) support
+-   Event dispatcher
+-   Core exceptions
+-   Helper utilities
 
-**AurexEngine** is a lightweight, modular runtime engine for PHP.
+## Installation
 
-It provides the foundational architecture required to power modern frameworks — without enforcing structure, opinions, or bundled features.
-
-It is designed to:
-
-- Power frameworks like **Modura** *(Coming Soon)*
-- Enable developers to build their own framework layer
-- Maintain long-term engine stability
-- Minimize upgrade friction
-
-AurexEngine focuses on the runtime lifecycle — not the application layer.
-
----
-
-## ⚙️ Core Principles
-
-- **Engine First** – Runtime separated from framework structure  
-- **Minimal by Design** – Only essential components  
-- **Composable Architecture** – Everything can be extended  
-- **Long-Term Stability** – Core evolves carefully  
-- **Framework Agnostic** – No enforced conventions  
-
----
-
-## 🏗 Architecture Model
-
-AurexEngine separates the engine from the framework layer.
-
-This separation ensures:
-
-- Engine stability
-- Independent framework evolution
-- Cleaner upgrades
-- Predictable runtime behavior
-
----
-
-## 📚 Documentation & Updates
-
-This README is intentionally minimal.
-
-Full documentation, release notes, roadmap, and feature updates will be published on the official documentation site.
-
-> 🌐 Documentation Site: *(Coming Soon)*
-
----
-
-## 📦 Installation
-
-```bash
+``` bash
 composer require aurexengine/core
+```
+
+## Purpose
+
+Core is framework-agnostic and does not include HTTP, routing, or
+database layers. It is designed to be reusable across different
+AurexEngine-based systems.
+
+## Author
+
+Ersel Magbanua\
+magbanuaersel@gmail.com
+
+## License
+
+MIT
