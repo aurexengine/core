@@ -29,6 +29,8 @@ class Application extends Container
         $this->instance(self::class, $this);
         $this->alias(self::class, 'app');
 
+        $this->instance(\AurexEngine\Contracts\Container::class, $this);
+
         // core services
         $this->singleton(EventDispatcher::class, fn () => new Dispatcher());
         $this->alias(EventDispatcher::class, 'events');
